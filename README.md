@@ -27,3 +27,12 @@ npm run build
 ```
 Produces a production build in the `dist` folder.
 
+## Environment variables
+
+Create a `.env` file in the `project` directory or copy the included `.env.example`.
+It must define `VITE_WEBHOOK_URL` pointing to your webhook endpoint:
+
+```bash
+VITE_WEBHOOK_URL=https://example.com/your/webhook
+```
+

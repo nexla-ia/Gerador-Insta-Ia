@@ -82,7 +82,7 @@ function App() {
         throw new Error('Não foi possível registrar o pedido');
       }
 
-      const response = await fetch('https://n8n.nexladesenvolvimento.com.br/webhook/LinkTeste', {
+      const response = await fetch(import.meta.env.VITE_WEBHOOK_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
